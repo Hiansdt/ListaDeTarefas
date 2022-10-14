@@ -1,9 +1,16 @@
-let adicionar = document.getElementById("adicionar");
+const adicionarTarefa = document.getElementById("btnAdicionar");
+const listaCriador = document.getElementById("inputLista");
+const tarefas = document.getElementById("tarefas");
 
-let listaDeTarefas = [];
+const adicionarBotao = document.getElementById("adicionador");
 
-adicionar.addEventListener("click", adicionarTarefa)
+adicionarBotao.addEventListener("click", addTarefa)
 
-function adicionarTarefa() {
-    let tarefa = prompt("Digite a tarefa")
+
+function prompts() {
+  listaCriador.style.display = "flex";
+}
+
+function addTarefa() {
+    tarefas.innerHTML = `<div class="azul">asdasdsadsadsad</div>`;
 }
