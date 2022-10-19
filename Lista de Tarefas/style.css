@@ -1,16 +1,76 @@
 #btnAdicionar {
     width: 100px;
-    background-color: grey;
+    height: 100px;
+    background-color: orange;
     padding: 10px;
     border: 2px solid black;
     text-align: center;
     font-size: large;
-    margin: 100px;
+    margin: 50px;
 }
 
 #inputLista {
-    background-color: gray;
+    background-color: orange;
     width: 300px;
     flex-direction: column;
     display: none;
+}
+
+.azul {
+  border: 1px solid black;
+  width: 300px;
+  margin: 10px;
+  margin-bottom: 30px;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  right: 50%;
+}
+
+#tarefas {
+  margin-left: 500px;
+  margin-top: -100px;
+}
+
+.input {
+  border: 1px solid black;
+  margin: 5px;
+  text-align: center;
+  min-height: 10px;
+}
+
+.amarelo {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#fixar {
+  margin: 300px;
+  border: 1px solid black;
+}
+
+.descricao {
+  height: 100px;
+  overflow-wrap: break-word;
+}
+
+#deletar {
+  margin-top: 30px;
+  border: 1px solid black;
+  display: none;
+  flex-direction: column;
+  width: 250px;
+}
+
+#numeroDiv{
+  display: flex;
+  flex-direction: row;
 }
