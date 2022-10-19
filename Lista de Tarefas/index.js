@@ -10,14 +10,14 @@ desc.className = "input";
 data.className = "input";
 
 
-adicionarBotao.addEventListener("click", addTarefa)
+adicionarBotao.addEventListener("click", addTarefa);2
 
 listaCriador.style.display = "flex";
 
-let i = 0
+let i = 0;
 
 function addTarefa() {
-    i += 1
+    i += 1;
     let tarefa = document.createElement("div");
     tarefa.className = "azul";
     tarefa.id = i;
