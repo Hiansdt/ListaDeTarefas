@@ -3,9 +3,9 @@
     width: 300px;
     flex-direction: column;
     display: none;
-    box-shadow: 6px 6px 3px rgb(156, 156, 156);
     color: aliceblue;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .azul {
@@ -19,9 +19,9 @@
   flex-direction: column;
   align-content: center;
   right: 50%;
-  color: rgb(75, 75, 75);
-  background-color: rgb(12900, 255, 255);
-  box-shadow: 6px 6px 3px rgb(255, 255, 185);
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 145, 255);
+  border-radius: 10px;
 }
 
 #tarefas {
@@ -35,6 +35,8 @@
   text-align: center;
   min-height: 10px;
   border: 1px solid rgb(95, 95, 95);
+  background-color: aliceblue;
+  color: black;
 }
 
 h1 {
@@ -54,7 +56,7 @@ h1 {
 }
 
 body {
-  background-color: rgb(39, 39, 39);
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
   display: flex;
 }
 
@@ -62,4 +64,13 @@ body {
   position: fixed;
   height: 98vh;
   border-right: 3px solid white;
+}
+
+#adicionador {
+  color: black;
+  background-color: aliceblue;
+}
+
+.tarefaComp {
+  width: 1000px;
 }
