@@ -1,11 +1,12 @@
 #inputLista {
+    display: none;    
     background-color: rgb(0, 0, 0);
     width: 300px;
     flex-direction: column;
-    display: none;
     color: aliceblue;
     margin-right: 10px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .azul {
@@ -71,6 +72,29 @@ body {
   background-color: aliceblue;
 }
 
-.tarefaComp {
-  width: 1000px;
+.add {
+  background-color: beige;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#editarTarefa{
+  display: none;
+  background-color: rgb(0, 0, 0);
+  width: 300px;
+  flex-direction: column;
+  color: aliceblue;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+h2 {
+  background-color: white;
+  color: black;
+  height: 30px;
 }
