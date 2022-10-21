@@ -11,6 +11,12 @@ let prioridadeDiv3 = document.querySelector(".prioridade3");
 let add = document.querySelector(".add");
 let editTar = document.querySelector("#editarTarefa");
 add.addEventListener("click", FunctionAdd);
+let enviarEditar = document.querySelector("#enviar");
+
+let tituloValor1 = document.getElementById("tit");
+let descValor1 = document.getElementById("des");
+let dataValor1 = document.getElementById("da");
+let prioridadeValor1 = document.getElementById("prior");
 
 function FunctionAdd(){
   listaCriador.style.display = "flex";
@@ -30,6 +36,11 @@ function addTarefa() {
   let desc = document.createElement("div");
   let data = document.createElement("div");
   let prioridade = document.createElement("div");
+
+  titulo.id = "tit" + i
+  desc.id = "desc" + i
+  data.id = "data" + i
+  prioridade.id = "prior" + i
 
   titulo.className = "input";
   desc.className = "input descricao";
@@ -86,9 +97,14 @@ function addTarefa() {
   tarefa.appendChild(editarTarefa);
   editarTarefa.innerHTML = "Editar Tarefa"
   editarTarefa.id = "edit" + i
-  editarTarefa.addEventListener("click", editMostrar);
+  editarTarefa.addEventListener("click", () => {
+    enviarFunc(editarTarefa.id)});
 
   listaCriador.style.display = "none";
+
+  enviarEditar.addEventListener("click", () => {
+    enviarFunc(editarTarefa.id)
+  })
 }
 
 function deletarTarefa(DivDeletar) {
@@ -99,6 +115,29 @@ function deletarTarefa(DivDeletar) {
   }
 }
 
-function editMostrar() {
-  editarTarefa.style.display = "flex";
+function editMostrar(editarID) {
+  FunctionAdd();
+  for (el of tarefas.children) {
+    if ("edit" + el.id === editarID) {
+      el.remove()
+
+    }
+  }
+}
+
+//titulo.id = "tit" + i
+//desc.id = "desc" + i
+//data.id = "data" + i
+//prior.id = "prior" + i
+
+
+
+function enviarFunc(editarID) {
+  for (el of tarefas.children) {
+    if ("edit" + el.id === editarID) {
+      el.remove()
+
+    }
+  }
+  editTar.style.display = "none";
 }
